@@ -41,6 +41,15 @@ module.exports = {
       },
     ],
   },
+  devServer: {
+    contentBase: "./dist-dev", // Content not from webpack is served from
+    publicPath: "/", // webpack output is served from here
+    hot: true,
+    host: '0.0.0.0',
+    port: 3000,
+    disableHostCheck: true,
+//    hotOnly: true // This doesn't work for now.
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.DefinePlugin({

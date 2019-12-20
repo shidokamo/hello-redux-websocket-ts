@@ -45,7 +45,7 @@ const App = ({ clear }: Props): React.ReactElement<null> => (
       <PanelGroup>
         <ControlPanel>
           <Header>
-            <Title>@giantmachines/redux-websocket</Title>
+            <Title>hello-redux-websocket-ts</Title>
 
             <LinkContainer>
               <Badge>
